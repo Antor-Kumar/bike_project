@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link custom css links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link flowbite  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section>
+        <header class="container mx-auto mb-32">
+            <nav
+                class="bg-white dark:bg-gray-900 fixed w-full z-40 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-4">
+                    <a href="" class="flex items-center text-2xl font-bold">Bike <span
+                            class="text-orange-500">Zone</span></a>
+                    <div class="flex md:order-2">
+
+                        <button type="button"
+                            class="hidden-section hidden lg:block md:block sm:block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login Now</button>
+                            
+                        <button data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                        id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Product</a>
+                            </li>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- carousel section -->
+     <section class="container mx-auto">
+        <div id="controls-carousel" class="relative w-full " data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-[80vh]">
+                 <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <img src="./images/1.jpg" class="absolute block w-full " alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/3.jpg" class="absolute block w-full" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/image_1.jpg" class="absolute block w-full" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/image_2.jpg" class="absolute block w-full" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/image_3.jpg" class="absolute block w-full" alt="...">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+     </section>
+    <!-- popular bike section -->
+    <section class=" bg-slate-50 mb-8 pb-4">
+        <div class="container mx-auto mt-14">
+            <div class="text-center py-12">
+                <h2 class="text-4xl font-bold">Our Popular Bike Design</h2>
+                <p class="mt-4 text-lg font-semibold ">Biking offers a plethora of benefits that extend beyond physical
+                    fitness.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 mx-3 gap-x-12 gap-y-7">
+                <div class="bg-slate-50 shadow-lg flex p-2 sm:h-60 rounded-lg gap-8 media_style">
+                    <img class="w-60 h-full rounded-lg" src="./images/bike_catalog/Kawasaki-Ninja-H2R-1.jpg" alt="">
+                    <div class="py-6">
+                        <h3 class="text-2xl font-bold"> Kawasaki Ninja H2R</h3>
+                        <p class="pt-4">The Kawasaki Ninja H2R is not just a motorcycle it's a technological marvel
+                            finely-tuned power.</p>
+                        <p class="pt-4 font-bold">Price :<span class="text-pink-700"> 1000$</span></p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 shadow-lg flex p-2 sm:h-60 rounded-lg gap-8 media_style">
+                    <img class="w-60 h-full rounded-lg" src="./images/bike_catalog/Kawasaki-Ninja-ZX-10R.jpg" alt="">
+                    <div class="py-6">
+                        <h3 class="text-2xl font-bold">Kawasaki Ninja ZX-10R</h3>
+                        <p class="pt-4">Explore the heart of the Ninja ZX-10R-its potent inline-four engine Discuss the
+                            finely-tuned power.</p>
+                        <p class="pt-4 font-bold">Price :<span class="text-pink-700"> 1000$</span></p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 shadow-lg flex p-2 sm:h-60 rounded-lg gap-8 media_style">
+                    <img class="w-60 h-full rounded-lg" src="./images/bike_catalog/yamaha_mt-15.jpg" alt="">
+                    <div class="py-6">
+                        <h3 class="text-2xl font-bold">Yamaha MT-15</h3>
+                        <p class="pt-4">Explore the eye-catching design elements of the Yamaha<br> MT-15 that set apart
+                            from the crowd.</p>
+                        <p class="pt-4 font-bold">Price :<span class="text-pink-700"> 1000$</span></p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 shadow-lg flex p-2 sm:h-60 rounded-lg gap-8 media_style">
+                    <img class="w-60 h-full rounded-lg" src="./images/bike_catalog/kawasaki_h2.webp" alt="">
+                    <div class="py-6">
+                        <h3 class="text-2xl font-bold">Kawasaki Ninja H2</h3>
+                        <p class="pt-4">Explore the heart of the Ninja H2 - its legendary supercharged engine amount of
+                            power.</p>
+                        <p class="pt-4 font-bold">Price :<span class="text-pink-700"> 1000$</span></p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 shadow-lg flex p-2 sm:h-60 rounded-lg gap-8 media_style">
+                    <img class="w-60 h-full rounded-lg" src="./images/bike_catalog/g310-rr-.webp" alt="">
+                    <div class="py-6">
+                        <h3 class="text-2xl font-bold">Suzuki Hayabusa</h3>
+                        <p class="pt-4">Explore the heart of the Hayabusa - its powerful inline-four engine motorcycles
+                            in the world.</p>
+                        <p class="pt-4 font-bold">Price :<span class="text-pink-700"> 1000$</span></p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 shadow-lg flex p-2 sm:h-60 rounded-lg gap-8 media_style">
+                    <img class="w-60 h-full rounded-lg" src="./images/bike_catalog/01-ducati-panigale-v4.jpg" alt="">
+                    <div class="py-6">
+                        <h3 class="text-2xl font-bold">Ducati Panigale V4</h3>
+                        <p class="pt-4">xplore the heart of the Panigale V4 - its ferocious V4 engine Discuss the
+                            incredible power.</p>
+                        <p class="pt-4 font-bold">Price :<span class="text-pink-700"> 1000$</span></p>
+                    </div>
+                </div>
+            </div>
+            <button type="button"
+                class="mt-12 px-10 py-4 mx-auto block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">View
+                All</button>
+        </div>
+    </section>
+    <!-- explore bike zone -->
+    <section class="my-28">
+        <div class="container mx-auto bg-blue-200">
+            <div class="grid sm:grid-cols-2 w-full sm:gap-6 sm:h-[60vh] md:h-[86vh] ">
+
+                <img class="h-full" src="./im/working.png" alt="">
+
+                <div class="md:my-32 sm:my-10 md:mr-12">
+                    <h2 class="md:text-5xl font-bold sm:text-3xl">Explore Bike Zone</h2>
+                    <p class="md:mt-7 sm:my-6 md:text-lg font-semibold sm:text-sm sm:mr-12">Bike Zone is a company that
+                        specializes in selling bicycles
+                        and related accessories. They offer a wide range of bicycles for various purposes, including
+                        mountain bikes, road bikes, hybrid bikes, and electric bikes. In addition to bikes, they also
+                        provide accessories such as helmets, locks, lights, and clothing.</p>
+
+                    <p class="mt-8 text-lg font-semibold hidden-section hidden lg:block md:block">Bike Zone focuses on
+                        providing high-quality products from
+                        reputable brands and aims to cater to the needs of both casual riders and serious cycling
+                        enthusiasts.</p>
+                    <div class="md:mt-12 md:gap-20 sm:gap-4 flex">
+                        <div>
+                            <span class="font-bold md:text-5xl sm:text-2xl">3.2K+</span><br>
+                            <span class="md:text-2xl font-semibold sm:text-lg">Brand</span>
+                        </div>
+                        <div>
+                            <span class="font-bold md:text-5xl sm:text-2xl">600+</span><br>
+                            <span class="md:text-2xl font-semibold sm:text-lg">Customer</span>
+                        </div>
+                        <div>
+                            <span class="font-bold md:text-5xl sm:text-2xl">5K+</span><br>
+                            <span class="md:text-2xl font-semibold sm:text-lg">Rating <span class="hidden-section hidden">&
+                                    Review</span></span>
+                        </div>
+                    </div>
+                    <button type="button"
+                        class=" mt-12 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-white text-lg sm:px-6 sm:py-3 md:px-8 md:py-5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ready to join -->
+    <section class="mb-20">
+        <div class="container mx-auto bg-blue-100 flex justify-around h-72 p-6">
+            <div class="mt-10">
+                <h2 class="md:text-4xl sm:text-3xl font-bold">Ready to Join?</h2>
+                <p class="md:text-lg font-semibold mt-6 sm:text-sm">It is a long established fact that a reader will be distracted by<br>readable content of a page when looking at its layout
+                </p>
+            </div>
+            <div class="text-center my-auto">
+                <!-- <button type="button"
+                    class=" md:w-44 md:h-16 mt-px text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Register
+                    Now</button> -->
+                    
+<!-- Modal toggle -->
+<button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg md:h-16 md:w-44 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+    Register Now
+  </button>
+  
+  <!-- Main modal -->
+  <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative w-full max-w-md max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="authentication-modal">
+                  <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  <span class="sr-only">Close modal</span>
+              </button>
+              <div class="px-6 py-6 lg:px-8">
+                  <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h3>
+                  <form class="space-y-6" action="#">
+                      <div>
+                          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                          <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                      </div>
+                      <div>
+                          <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                          <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                      </div>
+                      <div class="flex justify-between">
+                          <div class="flex items-start">
+                              <div class="flex items-center h-5">
+                                  <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+                              </div>
+                              <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                          </div>
+                          <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+                      </div>
+                      <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
+                      <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                          Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div> 
+  
+            </div>
+        </div>
+    </section>
+    <!-- client section -->
+    <section class="container mx-auto mt-4">
+        <div class="mb-16">
+            <h2 class="text-4xl font-bold mb-6">Bike Zone Recent Client</h2>
+            <P class="text-lg font-extralight">From beginners who are just starting their cycling journey to experienced
+                riders seeking <br>high-performance bikes, we have serving a wide range of customers.</P>
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:m-4 sm:grid-cols-2 my-16 gap-20">
+                <div class="shadow-xl pb-4 rounded-lg">
+                    <img class="w-full" src="./im/student/student-1.png" alt="">
+                    <h4 class="text-lg font-semibold mt-3 ps-4">Awlad Hossain</h4>
+                    <span class="text-sm font-thin ps-4">New Customer</span>
+                </div>
+                <div class="shadow-xl pb-4 rounded-lg">
+                    <img class="w-full" src="./im/student/student-2.png" alt="">
+                    <h4 class="text-lg font-semibold mt-3 ps-4">Awlad Hossain</h4>
+                    <span class="text-sm font-thin ps-4">New Customer</span>
+                </div>
+                <div class="shadow-xl pb-4 rounded-lg">
+                    <img class="w-full" src="./im/student/student-3.png" alt="">
+                    <h4 class="text-lg font-semibold mt-3 ps-4">Awlad Hossain</h4>
+                    <span class="text-sm font-thin ps-4">New Customer</span>
+                </div>
+                <div class="shadow-xl pb-4 rounded-lg">
+                    <img class="w-full" class="" src="./im/student/student-4.png" alt="">
+                    <h4 class="text-lg font-semibold mt-3 ps-4">Awlad Hossain</h4>
+                    <span class="text-sm font-thin ps-4">New Customer</span>
+                </div>
+            </div>
+        </div>
+
+        <button type="button"
+            class="px-10 py-4 mx-auto block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">View
+            All</button>
+    </section>
+    <!-- review section -->
+    <section class="my-20 sm:m-4 sm:mt-12">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="md:text-4xl font-bold sm:text-3xl">Some Customer Feedback</h2>
+                <p class="text-xl font-extralight mt-3">Customers always Provide their opinions about Bike Zone
+                    Services.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16 mt-16">
+                <div class="shadow-xl p-10 rounded-xl">
+                    <div class="flex justify-between">
+                        <img src="./im/comma.png" alt="">
+                        <div>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                        </div>
+                    </div>
+                    <p class="my-10 text-xl font-thin">I recently visited Bike Zone, and I must say it was an
+                        exceptional experience from start to finish. The moment I walked into the shop, I was greeted by
+                        friendly and knowledgeable staff who were ready to assist me. They took the time to understand
+                        my needs and provided expert advice on selecting the perfect bike for my requirements.</p>
+                    <div class="flex gap-4">
+                        <img src="./im/student/student-6.png" alt="">
+                        <div>
+                            <h2 class="text-xl font-semibold">Shanta Akter</h2>
+                            <P>Old Customer</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-xl p-10 rounded-xl">
+                    <div class="md:flex justify-between">
+                        <img src="./im/comma.png" alt="">
+                        <div>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                            <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                        </div>
+                    </div>
+                    <p class="my-10 text-xl font-thin">I recently visited Bike Zone, and I must say it was an
+                        exceptional experience from start to finish. The moment I walked into the shop, I was greeted by
+                        friendly and knowledgeable staff who were ready to assist me. They took the time to understand
+                        my needs and provided expert advice on selecting the perfect bike for my requirements.</p>
+                    <div class="flex gap-4">
+                        <img src="./im/student/student-5.png" alt="">
+                        <div>
+                            <h2 class="text-xl font-semibold">Shanta Akter</h2>
+                            <P>Old Customer</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- frequently asked questions section -->
+    <section class="container mx-auto my-20 sm:mt-24">
+        <div class="lg:mx-52 sm:m-4">
+            <div class="text-center">
+                <h2 class="md:text-4xl font-bold sm:text-3xl">Frequently Asked Questions</h2>
+                <p class="text-lg my-8
+                ">It is a long established fact that a reader will be distracted by the readable<br> content of a page
+                    when looking at its layout.</p>
+            </div>
+            <div id="accordion-color" data-accordion="collapse"
+                data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+                <h2 id="accordion-color-heading-1">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                        data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                        aria-controls="accordion-color-body-1">
+                        <span>What types of bikes are available in the market?</span>
+                        <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">There are various types of bikes available,
+                            including road bikes, mountain bikes, hybrid bikes, cruiser bikes, folding bikes, electric
+                            bikes (e-bikes), and BMX bikes. Each type is designed for specific purposes and terrains.
+                        </p>
+                        <p class="text-gray-500 dark:text-gray-400">Additionally, you can visit a local bike shop where
+                            experts can help you find the appropriate size based on your measurements and riding
+                            preferences.</p>
+                    </div>
+                </div>
+                <h2 id="accordion-color-heading-2">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                        data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                        aria-controls="accordion-color-body-2">
+                        <span>How do I choose the right size of bike for myself?</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Choosing the right bike size is crucial for
+                            comfort and safety. The best way to determine the right size is by measuring your inseam
+                            (the distance from your crotch to the floor) and referring to a manufacturer's size chart.
+                        </p>
+                        <p class="text-gray-500 dark:text-gray-400">Additionally, you can visit a local bike shop where
+                            experts can help you find the appropriate size based on your measurements and riding
+                            preferences.</p>
+                    </div>
+                </div>
+                <h2 id="accordion-color-heading-3">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                        data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                        aria-controls="accordion-color-body-3">
+                        <span>How often should I service my bike?</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                    <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400"> Regular bike maintenance is essential for
+                            optimal performance and longevity. It is recommended to have a basic tune-up and inspection
+                            at least once a year. However, the frequency of servicing can vary based on how often you
+                            ride, riding conditions, and personal preference. </p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Pay attention to signs such as unusual noises,
+                            difficulty in shifting gears, or braking issues, as these may indicate the need for
+                            immediate servicing.</p>
+                    </div>
+                </div>
+                <h2 id="accordion-color-heading-4">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                        data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                        aria-controls="accordion-color-body-4">
+                        <span>How often should I service my bike?</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                    <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400"> Regular bike maintenance is essential for
+                            optimal performance and longevity. It is recommended to have a basic tune-up and inspection
+                            at least once a year. However, the frequency of servicing can vary based on how often you
+                            ride, riding conditions, and personal preference. </p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Pay attention to signs such as unusual noises,
+                            difficulty in shifting gears, or braking issues, as these may indicate the need for
+                            immediate servicing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trusted company -->
+    <section class="container mx-auto hidden-section hidden  sm:block lg:block md:block">
+        <div class="sm:m-4">
+            <h2 class="text-center md:text-4xl sm:text-3xl font-bold ">Trusted by over 800+ companies</h2>
+            <div class="grid grid-cols-6 items-center gap-8 mt-8 mx-auto md:ml-12 mb-16">
+                <img src="./im/company/company-1.png" alt="">
+                <img src="./im/company/company-2.png" alt="">
+                <img src="./im/company/company-3.png" alt="">
+                <img src="./im/company/company-4.png" alt="">
+                <img src="./im/company/company-5.png" alt="">
+                <img src="./im/company/company-6.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <section class="bg-blue-200 mt-4">
+        <div class="text-center container mx-auto">
+            <div class="p-12">
+                <h4 class="text-2xl font-bold mb-2">Bike Zone</h4>
+                <span class="text-lg font-semibold">Office 41, Zawaya Buildin, Ghala Muscat,<br>
+                    Sultanate of Oman</span><br>
+                <span class="mt-4">Privacy Ploicy|Terms of use</span>
+                <div class="text-blue-900 text-2xl flex gap-8 justify-center mt-5">
+                    <i class="fa-brands fa-facebook-f "></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- link flowbite js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>
